@@ -1,0 +1,140 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body.light{
+background:#f4f6f9;
+color:#222;
+}
+
+body.dark{
+background:#121212;
+color:#e4e4e4;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#0077ff;
+color:white;
+}
+
+.theme-btn{
+padding:8px 14px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:white;
+color:#0077ff;
+font-weight:bold;
+}
+
+/* TEMPLATE SECTION */
+
+.template-section{
+text-align:center;
+padding:40px;
+}
+
+.template-section button{
+margin:10px;
+padding:10px 20px;
+border:none;
+background:#0077ff;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.template-view{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+
+/* CARD */
+
+.template-card{
+background:white;
+padding:25px;
+width:300px;
+border-radius:10px;
+box-shadow:0 5px 12px rgba(0,0,0,0.15);
+}
+
+body.dark .template-card{
+background:#1f1f1f;
+}
+
+/* LEARNING SECTION */
+
+.learning{
+padding:40px;
+margin:20px;
+border-radius:10px;
+background:white;
+}
+
+body.dark .learning{
+background:#1f1f1f;
+}
+
+.learning ul{
+margin-top:15px;
+}
+
+.learning li{
+margin:8px 0;
+}
+
+/* CONTACT FORM */
+
+.contact{
+margin-top:25px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input,textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+cursor:pointer;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+.template-view{
+flex-direction:column;
+align-items:center;
+}
+
+.template-card{
+width:90%;
+}
+
+.learning{
+margin:10px;
+padding:25px;
+}
+
+}
